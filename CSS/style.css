@@ -87,17 +87,3 @@ form textarea, #traduzido{
     height: 90px;
     margin: 0 0 15px;
 }
-
-footer{
-    background-color: #D8DFE8;
-    height: 100px;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-}
-
-footer p{
-    text-align: center;
-    vertical-align: middle;
-    padding: 40px;
-}
