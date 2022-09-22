@@ -1,0 +1,103 @@
+body{
+    background-color: #E5E5E5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h-titulo{
+    width: 940px;
+    text-align: center;
+    font-size: 2em;
+    margin: 0 auto;
+}
+
+.logo{
+    position: absolute;
+    left: 84px;
+    right: 0%;
+    top: 20px;
+    bottom: 0%;
+}
+
+.titulo{
+    display: inline-block;
+    margin: 35px auto;
+    padding: 0;
+    
+}
+
+.principal{
+    
+    text-align: center;
+    vertical-align: center;
+    margin: 20px auto;
+}
+
+.caixa{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.caixa h1{
+    font-size: 20px;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+.caixa p{
+    margin: 1em auto;
+}
+
+form textarea, #traduzido{
+    display: block;
+    margin: 20px auto; 
+    border: 0;
+    border-radius: 20px;
+    padding: 2%;
+    border: #def;
+}
+
+.btn{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    background: #D8DFE8;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+.btn:hover{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    background: #0A3871;
+    border-radius: 24px;
+    border: 1px solid #D8DFE8;
+    cursor: pointer;
+}
+
+.caixa-traduzido {
+    border: none;
+    width: 500px;
+    height: 90px;
+    margin: 0 0 15px;
+}
+
+footer{
+    background-color: #D8DFE8;
+    height: 100px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+footer p{
+    text-align: center;
+    vertical-align: middle;
+    padding: 40px;
+}

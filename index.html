@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Codificador</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content= "width=device-width">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+    </head>
 
-<body>
-
-    <header>
-        <img src="assets/logo.svg" alt="logo">
-    </header>
-    <main>
-        <section>
-            <textarea class="input-texto" cols="30" rows="10" placeholder="Digite o texto aqui"></textarea>
-            <div class="botoes">
-                <button class="encriptar" onclick=btnEncriptar()>Criptografar</button>
-                <button class="desencriptar" onclick=btnDesencriptar()>Descriptografar</button>
-            </div>
-        </section>
-
-        <section>
-            <textarea class="mensagem" cols="30" rows="10"></textarea>
-            <button class="copiar">Copiar</button>
-        </section>
-
-
-
-    </main>
-
-</body>
-<script src="script.js"></script>
-</html>
+    <body>
+        <header>
+            <div class="h-titulo">
+                <img src="assets/logo.svg" alt="logo Alura" class="logo">
+                <h1 class="titulo">ENCRIPTADOR DE TEXTO</h1>
+        </header>
+        <main>
+            <section class="principal">
+                <div class="caixa">
+                    <h1>Entre com sua mensagem</h1>
+                    <p>Lembre-se de digitar em minusculo, sem acentos e sem caracteres especiais.</p>
+                    <form id="entrar-texto">
+                        <textarea name="" id="msg" cols="60" rows="6" class="caixa-texto" placeholder="Digite seu texto aqui." required></textarea>
+                        <input type="button" id="encriptar" value="Encriptar" class="btn">
+                        <input type="button" id="desencriptar" value="Desencriptar" class="btn">
+                    </form>
+                </div>
+                <div class="caixa">
+                    <h1>Mensagem traduzida:</h1>
+                    <div id="texto-traduzido">
+                        <input class="caixa-traduzido" type="text" id="traduzido" readonly="readonly" placeholder="Texto traduzido"></input>
+                        <input type="button" value="Copiar" id="copiar" class="btn">
+                        
+                    </div>          
+                </div>
+            </section>
+        </main>
+        <script src="JS/script.js"></script>
+    </body>
